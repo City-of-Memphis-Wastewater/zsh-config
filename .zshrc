@@ -141,33 +141,8 @@ pretty() {
 # Full dev IDE
 alias labgo='pipx run jupyter lab --ip=127.0.0.1 --port=8080 --no-browser & sleep 2 && termux-open-url http://127.0.0.1:8080/lab'
 
-# Porbably destroy
-# Production SCADA dashboard (zero Jupyter visible)
-alias eds-dashboard='cd ~/dev/pipeline && \
-  pipx run voila Control-Room.ipynb \
-    --port=8080 \
-    --no-browser \
-    --strip_sources=True \
-    --theme=dark \
-    --template=gridstack & \
-  sleep 4 && termux-open-url http://127.0.0.1:8080'
-
 # Kill everything
 alias killdash='pkill -f jupyter; pkill -f voila; pkill -f python3'
-
-# Probably destroy
-# ONE-LINER PRODUCTION SCADA DASHBOARD (perfect on phone)
-alias scada='
-  killdash 2>/dev/null || true &&
-  jupyter lab \
-    --ip=127.0.0.1 \
-    --port=8080 \
-    --no-browser \
-    --ServerApp.default_url=/voila/render/Control-Room.ipynb \
-    --VoilaConfiguration.theme=dark \
-    --VoilaConfiguration.strip_sources=True \
-    & sleep 4 && termux-open-url http://127.0.0.1:8080
-'
 
 unsetopt AUTO_CD
 
