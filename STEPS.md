@@ -1,3 +1,6 @@
+# Use the .zshrc file
+Copy the included .zshrc file to your local ~/.zshrc
+
 # Add oh-my-zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
