@@ -15,3 +15,13 @@ mkdir -p ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions \
   ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
+
+mkdir -p ~/.termux
+# nano ~/.termux/colors.properties
+
+pkg install git
+git clone https://github.com/adi1090x/termux-style
+cd termux-style
+./install.sh
+termux-style
+
