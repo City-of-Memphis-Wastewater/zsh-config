@@ -1,5 +1,8 @@
-# Use the .zshrc file
-Copy the included .zshrc file to your local ~/.zshrc
+pkg install zsh
+
+# clone this repo and cop  the .zshrc file to your local ~/.zshrc
+git clone https://github.com/City-of-Memphis-Wastewater/zsh-config
+cp ./zsh-config/.zshrc ~/.zshrc
 
 # Add oh-my-zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
