@@ -196,9 +196,12 @@ bindkey '^[[A' history-beginning-search-backward
 # Dark mode
 export GTK_THEME=Adwaita-dark
 
-HISTFILE =~/.histfile
+#HISTFILE =~/.histfile
+HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
 unsetopt autocd beep
 bindkey -e
 zstyle :compinstall filename 'data/data/com.termux/files/home/.zshrc
