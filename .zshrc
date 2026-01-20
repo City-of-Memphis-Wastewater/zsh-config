@@ -1,14 +1,3 @@
-# Dark mode
-export GTK_THEME=Adwaita-dark
-
-HISTFILE =~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-unsetopt autocd beep
-bindkey -e
-zstyle :compinstall filename 'data/data/com.termux/files/home/.zshrc
-autoload -UZ compinit
-compinit
 
 # Suppress to test for speed improvements
 ## Ensure terminal reports 256-color support for modern CLIs (Typer, Rich, etc.)
@@ -203,3 +192,15 @@ fi
 bindkey "\e[19~" history-beginning-search-backward
 # Also highly recommend binding Up/Down arrows to do the same:
 bindkey '^[[A' history-beginning-search-backward
+
+# Dark mode
+export GTK_THEME=Adwaita-dark
+
+HISTFILE =~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+unsetopt autocd beep
+bindkey -e
+zstyle :compinstall filename 'data/data/com.termux/files/home/.zshrc
+autoload -UZ compinit
+compinit
