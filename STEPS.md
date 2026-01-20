@@ -22,6 +22,6 @@ mkdir -p ~/.termux
 pkg install git
 git clone https://github.com/adi1090x/termux-style
 cd termux-style
-./install.sh
+./install
 termux-style
 
