@@ -1,7 +1,9 @@
+termux-setup-storage
 pkg install python
 pkg install rust
 pkg install zsh
 pkg install termux-services
+pkg install termux-api
 pkg install git
 #sv-enable ssh-agent
 pkg install gh
