@@ -53,6 +53,18 @@ ZSH_THEME="agnoster"
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
 
+# Set a timeout for Git status checks (in seconds).
+# If status takes longer than this, the prompt shows no Git info.
+# 0.005 is a good starting point (5 milliseconds).
+zstyle ':git:status' check-for-changes 5
+
+# Tell the git plugin not to look for the repo in every parent directory
+# It should only look in the current directory and its immediate parent.
+# This avoids slow recursive searches.
+zstyle ':vcs_info:*' max-depth 2
+
+
+# ---
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
